@@ -10,7 +10,7 @@ This project is a Mental Health Hotline Check-in App developed using Flask, Open
  - Logging functionality to track user input, analysis results, and call initiation.
 ## Setup
 1. Clone the repository to your local machine:
-   `git clone https://github.com/yourusername/mental-health-checkin-app.git`
+   `git clone https://github.com/lizpart/flask_mental_health_hotline_checkin.git`
 2. Navigate to the project directory:
    `cd flask_mental_health_hotline_checkin`
 3. Install the required dependencies:
