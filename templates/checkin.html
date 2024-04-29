@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Hotline Check-In</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            background-image: url('/static/Moh2.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mental Health Hotline Check-In</h1>
+        <form id="checkinForm" action="/analyze" method="post">
+            <textarea id="userInput" name="user_input" rows="4" cols="50" placeholder="How are you feeling today?"></textarea>
+            <button type="submit">Check In</button>
+        </form>
+    </div>
+    
+</body>
+</html>
