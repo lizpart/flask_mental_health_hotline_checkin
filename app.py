@@ -4,17 +4,23 @@ import os
 from twilio.rest import Client
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
+from dotenv import load_dotenv 
+
 # Initialize the Flask application
 app = Flask(__name__)
 
+# Load environment variables from .env file
+load_dotenv()
+
+
 # Load the OpenAI API key
-openai.api_key = ('open_ai_key')
+openai.api_key = os.getenv('OPENAI_API_KEY')
 
 # Twilio credentials
-twilio_account_sid = "twilio_account_sid"
-twilio_auth_token = "twilio_auth_token"
-twilio_phone_number = "twilio_phone_number"
-specialist_phone_number = ('specialist_phone_number')
+twilio_account_sid = os.getenv('TWILIO_ACCOUNT_SID')
+twilio_auth_token = os.getenv('TWILIO_AUTH_TOKEN')
+twilio_phone_number = os.getenv('TWILIO_PHONE_NUMBER')
+specialist_phone_number = os.getenv('SPECIALIST_PHONE_NUMBER')
 
 #Ensure to replace these dummy values with real values
 
